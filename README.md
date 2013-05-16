@@ -264,6 +264,17 @@ public class HelloActivity extends Activity {
 Thus far, we've only used the HTTP verb `GET` to make calls, but we could just as easily have used `POST`, `PUT`, etc.
 
 
+## Starting the REST Service
+
+The code is now complete, so we can run the application to see the results. In order to consume a REST service, you must first have a REST service in which to consume. This project includes a simple self contained application for use with testing our REST request. You can start the server by running the following shell script from the `service` folder:
+
+```sh
+$ ./start-service.sh
+```
+
+Now that the service is running we can start the Android emulator and deploy the application.
+
+
 ## Starting an Android Virtual Device
 
 If you do not have an Android device for testing, you can use an Android Virtual Device (AVD). To do this, you must first have the [Android SDK] installed and also have installed the corresponding SDK Platforms and Packages.

@@ -1,3 +1,3 @@
 java -jar rest-service.jar & 
-echo $! > pid.txt
-sleep 3
+echo $! > "pid.txt"
+sleep 10
