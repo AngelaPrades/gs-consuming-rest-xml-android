@@ -49,7 +49,7 @@ Create a Maven POM that looks like this:
 
 	<groupId>org.hello</groupId>
 	<artifactId>rest-xml-android-complete</artifactId>
-	<version>1.0.0</version>
+	<version>0.1.0</version>
 	<packaging>apk</packaging>
 
 	<dependencies>
