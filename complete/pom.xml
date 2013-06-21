@@ -2,10 +2,10 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-	<groupId>org.hello</groupId>
-	<artifactId>rest-xml-android-complete</artifactId>
-	<version>0.1.0</version>
-	<packaging>apk</packaging>
+    <groupId>org.hello</groupId>
+    <artifactId>rest-xml-android-complete</artifactId>
+    <version>0.1.0</version>
+    <packaging>apk</packaging>
 
     <dependencies>
         <dependency>
@@ -45,7 +45,7 @@
             <plugin>
                 <groupId>com.jayway.maven.plugins.android.generation2</groupId>
                 <artifactId>android-maven-plugin</artifactId>
-                <version>3.5.3</version>
+                <version>3.6.0</version>
                 <configuration>
                     <sdk>
                         <platform>17</platform>
