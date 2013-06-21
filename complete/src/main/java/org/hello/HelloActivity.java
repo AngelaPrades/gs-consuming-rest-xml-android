@@ -25,24 +25,24 @@ import android.widget.TextView;
 
 public class HelloActivity extends Activity {
 
-	@Override
-	public void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.main);
-	}
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+    }
 
-	@Override
-	public void onStart() {
-		super.onStart();
-		final String url = "http://10.0.2.2:8080/hello-world";
+    @Override
+    public void onStart() {
+        super.onStart();
+        final String url = "http://10.0.2.2:8080/hello-world";
 
-		RestTemplate restTemplate = new RestTemplate();
-		restTemplate.getMessageConverters().add(new SimpleXmlHttpMessageConverter());
+        RestTemplate restTemplate = new RestTemplate();
+        restTemplate.getMessageConverters().add(new SimpleXmlHttpMessageConverter());
 
-		Greeting greeting = restTemplate.getForObject(url, Greeting.class);
+        Greeting greeting = restTemplate.getForObject(url, Greeting.class);
 
-		TextView textView = (TextView) this.findViewById(R.id.text_view);
-		textView.setText(greeting.getContent());
-	}
+        TextView textView = (TextView) this.findViewById(R.id.text_view);
+        textView.setText(greeting.getContent());
+    }
 
 }
