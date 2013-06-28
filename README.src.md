@@ -15,9 +15,6 @@ What you'll need
 ## {!include#how-to-complete-this-guide}
 
 <a name="scratch"></a>
-## {!include#android-dev-env}
-
-
 Set up the project
 ------------------
 
@@ -84,9 +81,6 @@ The code is now complete, so we can run the application to see the results. In o
 ```sh
 $ ./start-service.sh
 ```
-
-
-## {!include#start-android-virtual-device}
 
 
 ## {!include#build-and-run-android}
