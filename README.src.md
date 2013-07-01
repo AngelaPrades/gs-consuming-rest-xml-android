@@ -91,6 +91,5 @@ Summary
 
 Congratulations! You have just developed a simple REST client using Spring.
 
-## {!include#related-resources}
 
 [zip]: https://github.com/springframework-meta/gs-consuming-rest-xml-android/archive/master.zip
