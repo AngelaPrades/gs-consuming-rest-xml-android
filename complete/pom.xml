@@ -3,9 +3,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.hello</groupId>
-    <artifactId>rest-xml-android-complete</artifactId>
+    <artifactId>gs-consuming-rest-xml-android</artifactId>
     <version>0.1.0</version>
     <packaging>apk</packaging>
+    <name>gs-consuming-rest-xml-android</name>
 
     <dependencies>
         <dependency>
