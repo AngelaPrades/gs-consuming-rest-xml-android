@@ -1,10 +1,10 @@
-Getting Started: Consuming XML from a REST Service on Android
-=============================================================
+Getting Started: Consuming XML from a REST Service with Spring for Android
+==========================================================================
 
 What you'll build
 -----------------
 
-This Getting Started guide will walk you through the process of consuming XML from a REST service using Spring for Android's `RestTemplate`.
+This Getting Started guide walks you through the process of building an application that uses Spring for Android's `RestTemplate` to consume XML from a REST service.
 
 What you'll need
 ----------------
@@ -165,7 +165,8 @@ The [Android Manifest] contains all the information required to run an Android a
 </manifest>
 ```
 
-### Create a String Resource
+### Create a string resource
+Add a text string. Text strings can be referenced from the application or from other resource files.
 
 `res/values/strings.xml`
 ```xml
@@ -175,7 +176,8 @@ The [Android Manifest] contains all the information required to run an Android a
 </resources>
 ```
 
-### Create a Layout
+### Create a layout
+Here you define the visual structure for the user interface of your application.
 
 `res/layout/hello_layout.xml`
 ```xml
@@ -194,14 +196,12 @@ The [Android Manifest] contains all the information required to run an Android a
 ```
 
 <a name="initial"></a>
-Create a representation class
+Fetch a REST resource
 -----------------------------
 
-With the Android project configured, it is time to create our REST request. Before we can do that though, we need to consider the data we are wanting to consume.
+Before you create a REST request, consider the data that you want your application to consume.
 
-### XML Data
-
-When we query the service at the /hello-world endpoint, we will receive an XML response. This response represents a greeting and will resemble the following:
+For example, when you query the service at the /hello-world endpoint, you receive an XML response. This response represents a greeting and resembles the following:
 
 ```xml
 <greeting>
@@ -212,9 +212,9 @@ When we query the service at the /hello-world endpoint, we will receive an XML r
 
 The `id` field is a unique identifier for the greeting, and `content` is the textual representation of the greeting.
 
-### Greeting
-
-To model the greeting representation, we will create a representation class:
+Create a representation class
+-----------------------------
+To model the greeting representation, you create a representation class:
 
 `src/main/java/org/hello/Greeting.java`
 ```java
@@ -245,10 +245,10 @@ public class Greeting {
 ```
 
 
-Invoke a REST service with RestTemplate
----------------------------------------
+Invoke a REST service with the RestTemplate
+-------------------------------------------
 
-Spring provides a convenient template class called `RestTemplate`. `RestTemplate` makes interacting with most RESTful services a simple process. In the example below, we establish a few variables and then make a request of our simple REST service. As mentioned earlier, we will use the [Simple XML] library to marshal the XML response data into our representation classes.
+Spring provides a convenient template class called `RestTemplate`. `RestTemplate` makes interacting with most RESTful services a simple process. In the example below, you establish a few variables and then make a request of the simple REST service. As mentioned earlier, you use the [Simple XML] library to marshal the XML response data into your representation classes.
 
 `src/main/java/org/hello/HelloActivity.java`
 ```java
@@ -286,12 +286,12 @@ public class HelloActivity extends Activity {
 }
 ```
 
-Thus far, we've only used the HTTP verb `GET` to make calls, but we could just as easily have used `POST`, `PUT`, etc.
+Thus far, you've only used the HTTP verb `GET` to make calls, but you could just as easily have used `POST`, `PUT`, and so on.
 
 
 ## Start the REST service
 
-The code is now complete, so we can run the application to see the results. In order to consume a REST service, you must first have a REST service in which to consume. This project includes a simple self contained application for use with testing our REST request. You can start the server by running the following shell script from the `service` folder:
+In order to consume a REST service, you must first have a REST service to consume. This project includes a simple self-contained application for use with testing the REST request. You can start the server by running the following shell script from the `service` folder:
 
 ```sh
 $ ./start-service.sh
@@ -315,6 +315,17 @@ Summary
 
 Congratulations! You have just developed a simple REST client using Spring.
 
-There's more to building and working with REST APIs than is covered here.
+Related resources
+-----------------
+You can continue your exploration of Spring and REST with the following Getting Started guides:
+
+* [Handling POST, PUT, and GET Requests in REST Services](TODO)
+* [Creating Self-Describing APIs with HATEOAS](TODO)
+* [Securing a REST Service with HTTP Basic](TODO)
+* [Securing a REST Service with OAuth](TODO)
+* [Building a RESTful Web Service](https://github.com/springframework-meta/gs-rest-service-core/blob/master/README.md)
+* [Consuming RESTful Web Services with Spring](https://github.com/springframework-meta/gs-consuming-rest-core/blob/master/README.md)
+* [Testing REST Services](TODO)
+</span>
 
 [zip]: https://github.com/springframework-meta/gs-consuming-rest-xml-android/archive/master.zip
