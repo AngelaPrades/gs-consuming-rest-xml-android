@@ -68,9 +68,10 @@ $ mkdir -p src/main/java/org/hello
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.hello</groupId>
-    <artifactId>rest-xml-android-complete</artifactId>
+    <artifactId>gs-consuming-rest-xml-android</artifactId>
     <version>0.1.0</version>
     <packaging>apk</packaging>
+    <name>gs-consuming-rest-xml-android</name>
 
     <dependencies>
         <dependency>
@@ -172,7 +173,7 @@ Add a text string. Text strings can be referenced from the application or from o
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">REST XML Complete</string>
+    <string name="app_name">Consuming REST XML</string>
 </resources>
 ```
 
@@ -201,7 +202,8 @@ Fetch a REST resource
 
 Before you create a REST request, consider the data that you want your application to consume.
 
-For example, when you query the service at the /hello-world endpoint, you receive an XML response. This response represents a greeting and resembles the following:
+This project includes a simple, self-contained application for use with testing the REST request.
+When you query this service at the /hello-world endpoint, you receive an XML response. This response represents a greeting and resembles the following:
 
 ```xml
 <greeting>
@@ -248,7 +250,7 @@ public class Greeting {
 Invoke a REST service with the RestTemplate
 -------------------------------------------
 
-Spring provides a convenient template class called `RestTemplate`. `RestTemplate` makes interacting with most RESTful services a simple process. In the example below, you establish a few variables and then make a request of the simple REST service. As mentioned earlier, you use the [Simple XML] library to marshal the XML response data into your representation classes.
+Spring provides a convenient template class called `RestTemplate`. `RestTemplate` makes interacting with most RESTful services a simple process. In the example below, you establish a few variables and then make a request of the simple REST service. You use the Simple XML library to marshal the XML response data into your representation classes.
 
 `src/main/java/org/hello/HelloActivity.java`
 ```java
@@ -291,7 +293,7 @@ Thus far, you've only used the HTTP verb `GET` to make calls, but you could just
 
 ## Start the REST service
 
-In order to consume a REST service, you must first have a REST service to consume. This project includes a simple self-contained application for use with testing the REST request. You can start the server by running the following shell script from the `service` folder:
+In order to consume a REST service, you must first have a REST service to consume. You can start the server, included in this guide, by running the following shell script from the `service` folder:
 
 ```sh
 $ ./start-service.sh

@@ -46,7 +46,8 @@ Fetch a REST resource
 
 Before you create a REST request, consider the data that you want your application to consume.
 
-For example, when you query the service at the /hello-world endpoint, you receive an XML response. This response represents a greeting and resembles the following:
+This project includes a simple, self-contained application for use with testing the REST request.
+When you query this service at the /hello-world endpoint, you receive an XML response. This response represents a greeting and resembles the following:
 
 ```xml
 <greeting>
@@ -67,7 +68,7 @@ To model the greeting representation, you create a representation class:
 Invoke a REST service with the RestTemplate
 -------------------------------------------
 
-Spring provides a convenient template class called `RestTemplate`. `RestTemplate` makes interacting with most RESTful services a simple process. In the example below, you establish a few variables and then make a request of the simple REST service. As mentioned earlier, you use the [Simple XML] library to marshal the XML response data into your representation classes.
+Spring provides a convenient template class called `RestTemplate`. `RestTemplate` makes interacting with most RESTful services a simple process. In the example below, you establish a few variables and then make a request of the simple REST service. You use the Simple XML library to marshal the XML response data into your representation classes.
 
     {!include:complete/src/main/java/org/hello/HelloActivity.java}
 
@@ -76,7 +77,7 @@ Thus far, you've only used the HTTP verb `GET` to make calls, but you could just
 
 ## Start the REST service
 
-In order to consume a REST service, you must first have a REST service to consume. This project includes a simple self-contained application for use with testing the REST request. You can start the server by running the following shell script from the `service` folder:
+In order to consume a REST service, you must first have a REST service to consume. You can start the server, included in this guide, by running the following shell script from the `service` folder:
 
 ```sh
 $ ./start-service.sh
