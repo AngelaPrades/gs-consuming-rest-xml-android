@@ -1,3 +1,4 @@
+
 Getting Started: Consuming XML from a REST Service with Spring for Android
 ==========================================================================
 
@@ -28,11 +29,12 @@ To **start from scratch**, move on to [Set up the project](#scratch).
 To **skip the basics**, do the following:
 
  - [Download][zip] and unzip the source repository for this guide, or clone it using [git](/understanding/git):
-`git clone https://github.com/springframework-meta/{@project-name}.git`
- - cd into `{@project-name}/initial`
- - Jump ahead to [Create a resource representation class](#initial).
+`git clone https://github.com/springframework-meta/gs-consuming-rest-xml-android.git`
+ - cd into `gs-consuming-rest-xml-android/initial`
+ - Jump ahead to [Fetch a REST resource](#initial).
 
-**When you're finished**, you can check your results against the code in `{@project-name}/complete`.
+**When you're finished**, you can check your results against the code in `gs-consuming-rest-xml-android/complete`.
+[zip]: https://github.com/springframework-meta/gs-consuming-rest-xml-android/archive/master.zip
 
 <a name="scratch"></a>
 Set up the project
@@ -134,7 +136,7 @@ $ mkdir -p src/main/java/org/hello
 
 </project>
 ```
-
+    
 ### Create an Android manifest
 
 The [Android Manifest] contains all the information required to run an Android application, and it cannot build without one.
@@ -316,6 +318,3 @@ Summary
 -------
 
 Congratulations! You have just developed a simple REST client using Spring.
-
-
-[zip]: https://github.com/springframework-meta/gs-consuming-rest-xml-android/archive/master.zip
