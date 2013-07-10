@@ -1,12 +1,12 @@
 <#assign project_id="gs-consuming-rest-xml-android">
 
-Getting Started: Consuming XML from a REST Service with Spring for Android
-==========================================================================
+# Getting Started: Consuming XML from a REST Service with Spring for Android
 
 What you'll build
 -----------------
 
 This Getting Started guide walks you through the process of building an application that uses Spring for Android's `RestTemplate` to consume XML from a REST service.
+
 
 What you'll need
 ----------------
@@ -15,6 +15,7 @@ What you'll need
  - <@prereq_editor_android_buildtools/>
 
 ## <@how_to_complete_this_guide jump_ahead='Fetch a REST resource'/>
+
 
 <a name="scratch"></a>
 Set up the project
@@ -26,25 +27,26 @@ Set up the project
 
 ### Create a Maven POM
 
-    <@snippet path="pom.xml" prefix="complete"/>
+    <@snippet path="pom.xml" prefix="initial"/>
     
 <@create_android_manifest/>
 
-    <@snippet path="AndroidManifest.xml" prefix="complete"/>
+    <@snippet path="AndroidManifest.xml" prefix="initial"/>
 
 ### Create a string resource
 Add a text string. Text strings can be referenced from the application or from other resource files.
 
-    <@snippet path="res/values/strings.xml" prefix="complete"/>
+    <@snippet path="res/values/strings.xml" prefix="initial"/>
 
 ### Create a layout
 Here you define the visual structure for the user interface of your application.
 
-    <@snippet path="res/layout/hello_layout.xml" prefix="complete"/>
+    <@snippet path="res/layout/hello_layout.xml" prefix="initial"/>
+
 
 <a name="initial"></a>
 Fetch a REST resource
------------------------------
+---------------------
 
 Before you create a REST request, consider the data that you want your application to consume.
 
@@ -59,6 +61,7 @@ When you query this service at the /hello-world endpoint, you receive an XML res
 ```
 
 The `id` field is a unique identifier for the greeting, and `content` is the textual representation of the greeting.
+
 
 Create a representation class
 -----------------------------
@@ -77,7 +80,8 @@ Spring provides a convenient template class called `RestTemplate`. `RestTemplate
 Thus far, you've only used the HTTP verb `GET` to make calls, but you could just as easily have used `POST`, `PUT`, and so on.
 
 
-## Start the REST service
+Start the REST service
+----------------------
 
 In order to consume a REST service, you must first have a REST service to consume. You can start the server, included in this guide, by running the following shell script from the `service` folder:
 

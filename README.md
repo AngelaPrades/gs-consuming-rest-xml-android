@@ -1,11 +1,11 @@
 
-Getting Started: Consuming XML from a REST Service with Spring for Android
-==========================================================================
+# Getting Started: Consuming XML from a REST Service with Spring for Android
 
 What you'll build
 -----------------
 
 This Getting Started guide walks you through the process of building an application that uses Spring for Android's `RestTemplate` to consume XML from a REST service.
+
 
 What you'll need
 ----------------
@@ -35,6 +35,7 @@ To **skip the basics**, do the following:
 
 **When you're finished**, you can check your results against the code in `gs-consuming-rest-xml-android/complete`.
 [zip]: https://github.com/springframework-meta/gs-consuming-rest-xml-android/archive/master.zip
+
 
 <a name="scratch"></a>
 Set up the project
@@ -198,9 +199,10 @@ Here you define the visual structure for the user interface of your application.
 </LinearLayout>
 ```
 
+
 <a name="initial"></a>
 Fetch a REST resource
------------------------------
+---------------------
 
 Before you create a REST request, consider the data that you want your application to consume.
 
@@ -215,6 +217,7 @@ When you query this service at the /hello-world endpoint, you receive an XML res
 ```
 
 The `id` field is a unique identifier for the greeting, and `content` is the textual representation of the greeting.
+
 
 Create a representation class
 -----------------------------
@@ -293,7 +296,8 @@ public class HelloActivity extends Activity {
 Thus far, you've only used the HTTP verb `GET` to make calls, but you could just as easily have used `POST`, `PUT`, and so on.
 
 
-## Start the REST service
+Start the REST service
+----------------------
 
 In order to consume a REST service, you must first have a REST service to consume. You can start the server, included in this guide, by running the following shell script from the `service` folder:
 
