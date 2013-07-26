@@ -1,6 +1,4 @@
 
-# Getting Started: Consuming XML from a REST Service with Spring for Android
-
 What you'll build
 -----------------
 

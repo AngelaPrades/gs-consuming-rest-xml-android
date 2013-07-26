@@ -1,7 +1,5 @@
 <#assign project_id="gs-consuming-rest-xml-android">
 
-# Getting Started: Consuming XML from a REST Service with Spring for Android
-
 What you'll build
 -----------------
 
