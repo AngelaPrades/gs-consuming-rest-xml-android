@@ -1,9 +1,10 @@
 <#assign project_id="gs-consuming-rest-xml-android">
+This Getting Started guide walks you through the process of building an application that uses Spring for Android's `RestTemplate` to consume XML from a REST service.
 
 What you'll build
 -----------------
 
-This Getting Started guide walks you through the process of building an application that uses Spring for Android's `RestTemplate` to consume XML from a REST service.
+You'll fetch some publicly visible Facebook data using their REST API from Android.
 
 
 What you'll need

@@ -1,8 +1,9 @@
+This Getting Started guide walks you through the process of building an application that uses Spring for Android's `RestTemplate` to consume XML from a REST service.
 
 What you'll build
 -----------------
 
-This Getting Started guide walks you through the process of building an application that uses Spring for Android's `RestTemplate` to consume XML from a REST service.
+You'll fetch some publicly visible Facebook data using their REST API from Android.
 
 
 What you'll need
@@ -210,7 +211,7 @@ When you query this service at the /hello-world endpoint, you receive an XML res
 ```xml
 <greeting>
     <id>1</id>
-    <content>"Hello, World!"</>
+    <content>"Hello, World!"</content>
 </greeting>
 ```
 
