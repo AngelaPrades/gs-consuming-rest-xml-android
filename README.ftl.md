@@ -4,7 +4,7 @@ This guide walks you through the process of building an application that uses Sp
 What you'll build
 -----------------
 
-You'll build a simple client that fetches some publicly visible Facebook data using their REST API from Android.
+You'll build a simple Android client that fetches some publicly visible Facebook data using their REST API.
 
 
 What you'll need
