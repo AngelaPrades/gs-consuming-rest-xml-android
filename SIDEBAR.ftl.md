@@ -1,11 +1,11 @@
-### Related Resources
+## Related resources
 
-There's more to consuming RESTful web services from an Android device than is covered here. You may want to continue your exploration of Spring and REST with the following
+There's more to consuming RESTful web services from an Android device than what is covered here. You can continue to explore Spring and REST with the following resources.
 
 ### Getting Started guides
 
-* [Consuming RESTful Web Services on Android][gs-consuming-rest-android]
-* [Consuming RESTful Web Services][gs-consuming-rest]
+* [Consuming RESTful Web Services with Spring for Android][gs-consuming-rest-android]
+* [Consuming a RESTful Web Service][gs-consuming-rest]
 * [Building a RESTful Web Service][gs-rest-service]
 * [Building Android Projects with Maven][gs-maven-android]
 
