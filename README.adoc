@@ -13,7 +13,6 @@ You'll build a simple Android client that fetches some publicly visible Facebook
 
 include::https://raw.github.com/spring-guides/getting-started-macros/master/prereq_editor_android_buildtools.adoc[]
 
-:jump_ahead: Fetch a REST resource
 include::https://raw.github.com/spring-guides/getting-started-macros/master/how_to_complete_this_guide.adoc[]
 
 
