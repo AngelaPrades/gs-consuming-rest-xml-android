@@ -1,3 +1,7 @@
+---
+tags: [rest, android]
+projects: [spring-android]
+---
 :toc:
 :icons: font
 :source-highlighter: prettify
