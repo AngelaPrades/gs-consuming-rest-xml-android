@@ -15,17 +15,17 @@ You'll build a simple Android client that fetches some publicly visible Facebook
 
 == What you'll need
 
-include::https://raw.github.com/spring-guides/getting-started-macros/master/prereq_editor_android_buildtools.adoc[]
+include::https://raw.githubusercontent.com.com/spring-guides/getting-started-macros/master/prereq_editor_android_buildtools.adoc[]
 
-include::https://raw.github.com/spring-guides/getting-started-macros/master/how_to_complete_this_guide.adoc[]
+include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/master/how_to_complete_this_guide.adoc[]
 
 
 [[scratch]]
 == Set up the project
 
-include::https://raw.github.com/spring-guides/getting-started-macros/master/android_build_system_intro.adoc[]
+include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/master/android_build_system_intro.adoc[]
 
-include::https://raw.github.com/spring-guides/getting-started-macros/master/create_directory_structure_org_hello.adoc[]
+include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/master/create_directory_structure_org_hello.adoc[]
 
 
 `pom.xml`
@@ -34,7 +34,7 @@ include::https://raw.github.com/spring-guides/getting-started-macros/master/crea
 include::initial/pom.xml[]
 ----
     
-include::https://raw.github.com/spring-guides/getting-started-macros/master/create_android_manifest.adoc[]
+include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/master/create_android_manifest.adoc[]
 
 `AndroidManifest.xml`
 [source,xml]
@@ -110,7 +110,7 @@ In order to consume a REST service, you must first have a REST service to consum
 ----
 
 
-include::https://raw.github.com/spring-guides/getting-started-macros/master/build_and_run_android.adoc[]
+include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/master/build_and_run_android.adoc[]
 
 
 == Summary
